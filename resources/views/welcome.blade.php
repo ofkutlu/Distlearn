@@ -403,30 +403,17 @@
 <body class="antialiased">
     <div
         class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-        {{-- @if (Route::has('login'))
-            <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                @auth
-                    <a href="{{ url('/home') }}" class="text-lg text-gray-900 dark:text-white underline">Ana Sayfa</a>
-                @else
-                    <a href="{{ route('login') }}" class="text-lg text-gray-900 dark:text-white underline">Giriş</a>
-
-                    @if (Route::has('register'))
-                        <a href="{{ route('register') }}" class="ml-4 text-lg text-gray-900 dark:text-white underline">Kayıt Ol</a>
-                    @endif
-                @endauth
-            </div>
-        @endif --}}
 
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div class="flex justify-center pt-8 sm:justify-center sm:pt-0">
-                 @if (Route::has('login'))
-                <a href="{{ url('/home') }}">
-                <h1 style="color: white">DistLearn</h1>
-                </a>
+                @if (Route::has('login'))
+                    <a href="{{ url('/home') }}">
+                        <h1 style="color: white">DistLearn</h1>
+                    </a>
                 @else
-                <a href="{{url('/')}}">
-                <h1 style="color: white">DistLearn</h1>
-                </a>
+                    <a href="{{ url('/') }}">
+                        <h1 style="color: white">DistLearn</h1>
+                    </a>
                 @endif
             </div>
 
@@ -447,22 +434,6 @@
                                     class=" text-gray-900 dark:text-white">Öğretim Görevlisi Girişi</a></div>
                         </div>
                     </div>
-
-                    <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                        <div class="flex items-center">
-                            <img src="https://img.icons8.com/ios/50/000000/administrator-male--v1.png" />
-                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="{{ route('login') }}"
-                                    class=" text-gray-900 dark:text-white">Yönetici Girişi</a></div>
-                        </div>
-                    </div>
-
-                    {{-- <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                        <div class="flex items-center">
-                            <img src="https://img.icons8.com/ios/50/000000/about.png" />
-                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/"
-                                    class=" text-gray-900 dark:text-white">Hakkında</a></div>
-                        </div>
-                    </div> --}}
                 </div>
             </div>
         </div>
