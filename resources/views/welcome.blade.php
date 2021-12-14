@@ -416,22 +416,14 @@
                     </a>
                 @endif
             </div>
-
             <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                 <div class="grid grid-cols-1 md:grid-cols-1">
                     <div class="p-6">
                         <div class="flex items-center">
                             <img src="https://img.icons8.com/ios/50/000000/student-male--v1.png" />
                             <div class="ml-4 text-lg leading-7 font-semibold"><a href="{{ route('login') }}"
-                                    class=" text-gray-900 dark:text-white">Öğrenci Girişi</a></div>
-                        </div>
-                    </div>
-
-                    <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                        <div class="flex items-center">
-                            <img src="https://img.icons8.com/ios/50/000000/teacher.png" />
-                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="{{ route('login') }}"
-                                    class=" text-gray-900 dark:text-white">Öğretim Görevlisi Girişi</a></div>
+                                    class=" text-gray-900 dark:text-white">Uzaktan Eğitim Sitesine Giriş
+                                </a></div>
                         </div>
                     </div>
                 </div>

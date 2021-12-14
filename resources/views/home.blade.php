@@ -1,24 +1,63 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                    <h3 class="card-title">Yapay Zeka</h3>
+                    <a href="#" class="btn btn-primary">Ders İçeriği</a>
+                </div>
+            </div>
 
-                    {{ __('You are logged in!') }}
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title">Görüntü İşleme</h3>
+                    <a href="#" class="btn btn-primary">Ders İçeriği</a>
+                </div>
+            </div>
 
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title">Web Programlama</h3>
+                    <a href="#" class="btn btn-primary">Ders İçeriği</a>
+                </div>
+            </div>
+
+             <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title">Yapay Zeka</h3>
+                    <a href="#" class="btn btn-primary">Ders İçeriği</a>
+                </div>
+            </div>
+
+             <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title">Yapay Zeka</h3>
+                    <a href="#" class="btn btn-primary">Ders İçeriği</a>
+                </div>
+            </div>
+
+             <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title">Yapay Zeka</h3>
+                    <a href="#" class="btn btn-primary">Ders İçeriği</a>
+                </div>
+            </div>
+
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title">Yapay Zeka</h3>
+                    <a href="#" class="btn btn-primary">Ders İçeriği</a>
+                </div>
+            </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title">Yapay Zeka</h3>
+                    <a href="#" class="btn btn-primary">Ders İçeriği</a>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
 @endsection

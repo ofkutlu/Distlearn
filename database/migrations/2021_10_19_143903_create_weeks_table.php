@@ -17,9 +17,6 @@ class CreateWeeksTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('description');
-            $table->string('video_path')->nullable();
-            $table->string('document_path')->nullable();
-            $table->string('task_document_path')->nullable();
             $table->foreignId('courses_id');
         });
     }
