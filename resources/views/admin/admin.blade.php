@@ -47,10 +47,10 @@
                             <a class="nav-link active" aria-current="page" href="{{ route('faculties') }}">Fakülteler</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('departments') }}">Bölümler</a>
+                            <a class="nav-link" href="{{ action('App\Http\Controllers\Admin\DepartmentController@index') }}">Bölümler</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('teachers') }}">Öğretmenler</a>
+                            <a class="nav-link" href="{{ action('App\Http\Controllers\Admin\TeacherController@index') }}">Öğretmenler</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('students') }}">Öğrenciler</a>

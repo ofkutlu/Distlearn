@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Student;
 use Illuminate\Http\Request;
 
-class TeacherController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,8 @@ class TeacherController extends Controller
      */
     public function index()
     {
-        return view('teacher_home');
+        $students_data['students'] = Student::inRandomOrder()->get();
+        return view('admin.admin_faculty',$students_data);
     }
 
     /**

@@ -46,10 +46,10 @@ class LoginController extends Controller
             return redirect()->route('admin');
         }
 
-        if (Auth::user()->id == 3) { // do your magic here
+        if (Auth::user()->id == 2) { // do your magic here
             return redirect()->route('teacher');
         }
 
-        return redirect('/home');
+        return redirect('/login');
     }
 }

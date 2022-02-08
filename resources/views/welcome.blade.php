@@ -406,15 +406,6 @@
 
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div class="flex justify-center pt-8 sm:justify-center sm:pt-0">
-                @if (Route::has('login'))
-                    <a href="{{ url('/home') }}">
-                        <h1 style="color: white">DistLearn</h1>
-                    </a>
-                @else
-                    <a href="{{ url('/') }}">
-                        <h1 style="color: white">DistLearn</h1>
-                    </a>
-                @endif
             </div>
             <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                 <div class="grid grid-cols-1 md:grid-cols-1">
@@ -422,7 +413,7 @@
                         <div class="flex items-center">
                             <img src="https://img.icons8.com/ios/50/000000/student-male--v1.png" />
                             <div class="ml-4 text-lg leading-7 font-semibold"><a href="{{ route('login') }}"
-                                    class=" text-gray-900 dark:text-white">Uzaktan Eğitim Sitesine Giriş
+                                    class=" text-gray-900 dark:text-white">Uzaktan Eğitim Sistemine Giriş
                                 </a></div>
                         </div>
                     </div>

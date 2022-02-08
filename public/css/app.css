@@ -298,7 +298,7 @@ svg {
 
 table {
   caption-side: bottom;
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
 }
 
 caption {
@@ -3180,7 +3180,7 @@ textarea.form-control-lg {
   border-color: #e3342f;
 }
 .btn-danger:hover {
-  color: #000;
+  color: #fff;
   background-color: #e7524e;
   border-color: #e64844;
 }

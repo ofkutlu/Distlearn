@@ -9,6 +9,8 @@ class Department extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
     public function faculty()
     {
         return $this->belongsTo(Faculty::class);

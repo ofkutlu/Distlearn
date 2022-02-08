@@ -31,7 +31,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/student') }}">
+                <a class="navbar-brand" href="{{ url('/teacher') }}">
                     {{ config('app.name', 'DistLearn') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -50,7 +50,7 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-                            {{-- @if (Route::has('login'))
+                            @if (Route::has('login'))
                                 <li class="nav-item">
 
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Giriş') }}</a>
@@ -61,7 +61,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Kayıt Ol') }}</a>
                                 </li>
-                            @endif --}}
+                            @endif
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"

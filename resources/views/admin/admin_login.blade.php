@@ -8,23 +8,26 @@
                     {{ session('status') }}
                 </div>
             @endif
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <p style="font-weight: bold"># &emsp;&emsp; Kullanıcı
-                        İsmi &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Email
-                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Oluşturulma Tarihi
-                    </p>
-                </li>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Kullanıcı İsmi</th>
+                        <th scope="col">E-Posta</th>
+                    </tr>
+                </thead>
+                @foreach ($users as $user)
+                    <tbody>
+                        <tr>
+                            <th scope="row">{{ $user->id }}</th>
+                            <td>{{ $user->name }}</td>
+                            <td>{{ $user->email }}</td>
+                            <td><a class="btn btn-danger" type="button">Sil</a></td>
+                        </tr>
+                    </tbody>
+                @endforeach
+            </table>
 
-                {{-- Burdan İtibaren li tagı foreach döngüsüne alınıp teker teker fakülte isimleri ve sıralama veritabanından çekilecek --}}
-                <li class="list-group-item">
-
-                    <p> 1. &emsp;&emsp; Ömer Faruk Kutlu
-                        <button class="btn btn-dark" style="margin-left:20rem;" type="button">Düzenle</button>
-                        <button class="btn btn-danger" style="margin-left:15rem;" type="button">Sil</button>
-                    </p>
-                </li>
-            </ul>
         </div>
     </div>
 @endsection

@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Department;
+use App\Models\Faculty;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Faker\Factory as Faker;
@@ -16,15 +18,14 @@ class StudentSeeder extends Seeder
     public function run()
     {
         $faker = Faker::create();
-
         for ($i = 1; $i <= 10; $i++) {
 
-            DB::table('teachers')->insert([
+            DB::table('students')->insert([
                 'name' => $faker->name,
                 'email' => $faker->email,
                 'password' => $faker->password,
-                'faculties_id' => rand(1,10),
-                'departments_id' => rand(11,21)
+                'faculties_id' => rand(15,50),
+                'departments_id' => rand(51,99),
             ]);
         }
     }

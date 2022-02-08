@@ -21,7 +21,7 @@ class DepartmentSeeder extends Seeder
         foreach ($departments as $department) {
             DB::table('departments')->insert([
                 'name' => $department,
-                'faculties_id' =>rand(1,10)
+                'faculties_id' => rand(1,10)
             ]);
         }
 

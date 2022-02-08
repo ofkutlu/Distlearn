@@ -18,6 +18,7 @@ class CreateAttachmentsTable extends Migration
             $table->string('video_path')->nullable();
             $table->string('document_path')->nullable();
             $table->string('task_document_path')->nullable();
+            $table->timestamps();
         });
     }
 

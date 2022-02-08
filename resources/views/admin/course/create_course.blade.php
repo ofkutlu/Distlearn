@@ -10,27 +10,19 @@
             @endif
             <form>
                 <div class="mb-3">
-                    <select class="form-select" aria-label="Fakülte Seçiniz">
-                        <option selected>Fakülte Seçiniz</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-                <div class="mb-3">
                     <select class="form-select" aria-label="Bölüm Seçiniz">
                         <option selected>Bölüm Seçiniz</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                         @foreach ($departments as $department )
+                          <option value="{{$department->id}}">{{$department->name}}</option>
+                   @endforeach
                     </select>
                 </div>
                   <div class="mb-3">
                     <select class="form-select" aria-label="Öğretmen Seçiniz">
                         <option selected>Öğretmen Seçiniz</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                          @foreach ($teachers as $teacher )
+                          <option value="{{$teacher->id}}">{{$teacher->name}}</option>
+                   @endforeach
                     </select>
                 </div>
                 <div class="mb-3">
